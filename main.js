@@ -20,7 +20,10 @@ function show() {
       console.log(json);
       if (json.cod === "404") {
         weatherImage.src = "images/404.png";
+        temp.innerHTML ="";
         desc.innerHTML = "İnvalid Result";
+        humidity.innerHTML ='%';
+      windSpeed.innerHTML ="Km/h";
       } else temp.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
       desc.innerHTML = `${json.weather[0].description}`;
       humidity.innerHTML = `${json.main.humidity}%`;
