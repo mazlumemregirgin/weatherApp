@@ -126,7 +126,6 @@ main{
 }
 
 @media (max-width: 767px) {
-    /* Ekran boyutu 767px veya daha küçükse, divleri alt alta yerleştir */
     main{
         height: 90vh;
     }
